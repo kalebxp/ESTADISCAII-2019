@@ -1,0 +1,403 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\begin{document}
+\begin{center}
+\Large{UNIVERSIDAD NACIONAL DE SAN CRISTOBAL DE HUAMANGA}\\
+\vspace{1cm}
+\Large{FACULTAD DE INGENIERÍA DE MINAS, GEOLOGÍA Y CIVIL}\\
+\vspace{1cm}
+\Large{ESCUELA DE FORMACIÓN PROFESIONAL DE}\\
+\Large{INGENIERÍA DE SISTEMAS}\\
+\includegraphics[scale=1]{imagenes/logo-universidad-nacional-de-san-cristobal-de-huamanga.png}
+  
+\vspace{1cm}
+\Large{RESOLUCIÓN DE EJERCICIOS}\\
+\vspace{1cm}
+\end{center}
+\Large{DOCENTE :}\\
+\vspace{1cm}
+\hspace*{5cm}\Large{JACKSON M’COY ROMERO PLASENCIA}\\
+\Large{INTEGRANTES :}\\
+\vspace{0.3cm}
+\hspace*{5cm}\Large{ALEGRIA ÑACCHA, Cristhian}\\
+\vspace{0.3cm}
+\hspace*{5cm}\Large{CORICHAHUA GUTIERREZ, Erick Kevin}\\
+\vspace{0.3cm}
+\hspace*{5cm}\Large{SANTIAGO QUISPE, Caleb}\\
+\vspace{0.3cm}
+\hspace*{5cm}\Large{TRISTAN QUISPE, Guadalupe}\\
+\vspace{0.3cm}
+\vspace*{3cm}\\
+\Large\centerline{Ayacuho - Peru}
+\Large\centerline{2019} 
+\newpage
+\section{Pregunta 01}
+Un taller tiene 5 empleados. Los salarios de cada uno de ellos son: 5,7,8,10,10.
+\begin{itemize}
+\item[a.] Determine la media y la varianza de la población.
+\item[b.] Halle la distribución muestral de las medias para muestras de tamaño 2 escogidas(sin sustitución) de esta población.
+\item[c.] Determine la media y la varianza de la distribución muestral de las medias de tamaño 2.
+\item[d.] Compare la media de las medias muestras con la media de la población. También compare la dispersión de las medias de las muestras con la dispersión de la población.
+\end{itemize}
+SOLUCIÓN\\
+\begin{itemize}
+\item[a.]
+$\overline{X} = \dfrac{5+7+8+10+10}{5} \qquad = 8$\\
+\newline
+$S^2 = \dfrac{(5-8)^2+(7-8)^2+(8-8)^2+(10-8)^2+(10-8)^2}{5-1}$\\
+\newline
+$S^2 = 4.5$
+\item[b.]
+ 
+\vspace{0.3cm}
+$ $\\
+\vspace{0.3cm}
+$(5,7)$\\
+\vspace{0.3cm}
+$(5,7)(7,8)$\\
+\vspace{0.3cm}
+$(5,7)(7,8)(8,10)$\\
+\vspace{0.3cm}
+$\underbrace{(5,7)(7,8)(8,10)(10,10)}_{\mbox{10 muestras 10medias}}$\\
+\item[c.]
+
+\vspace{0.3cm}
+$ $\\
+\vspace{0.3cm}
+$(5,7)$\\
+\vspace{0.3cm}
+$(5,7)(7,8)$\\
+\vspace{0.3cm}
+$(5,7)(7,8)(8,10)$\\
+\vspace{0.3cm}
+$\underbrace{(5,7)(7,8)(8,10)(10,10)}$\\
+$\sum = \dfrac{80}{10}\qquad = 8 = \overline{X}$
+$S^2 = 1.5$
+\item[d.]
+Por tanto:\\
+\newline
+$\dfrac{\overline{X_{2}}}{\overline{X_{1}}} = \dfrac{8}{8} = 1$
+$\dfrac{S^2}{s^2} = \dfrac{1.5}{4.5} = 0.333$
+\end{itemize}
+\section{Pregunta 02}
+La demanda diaria dc un producto puede ser 0, I, 2, 3, 4 con probabilidades respectivas 0.3, 0.3, 0.2, 0.1, 0.1.\\
+\begin{itemize}
+\item[a.]escriba el modelo de probabilidad de la demanda promedio de 36 días.
+\item[b.]¿Qué probabilidad hay de que la demanda promedio de 36 días este entre 1 y 2 inclusive?\\
+\end{itemize}
+SOLUCIÓN\\
+\newline
+$ x = Demanda \ diaria \ de \ un \ producto \ $\\
+\newline
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+x & 0 & 1 & 2 & 3 & 4 \\ 
+\hline 
+P(x) & 0.3 & 0.3 & 0.2 & 0.1 & 0.1 \\ 
+\hline 
+\end{tabular} 
+\newline
+\begin{itemize}
+\item[a.] $ n = 36 $ 
+$$ux = E(x) = 4\sum xp(x)=0(0.3)+1(0.3)+2(0.2)+3(0.1)+4(0.1)$$
+$$ux = 1.4$$
+$$E(x^2) = \sum x^2p(x) = 0^2(0.3)+1^2(0.3)+2^2(0.2)+3^2(0.1)+4^2(0.1)$$
+$$E(x^2)=3.6$$
+$$VAR(x) = E(x^2) - (\mu)^2$$ 
+$$\sigma_{x}^{2}=3.6-1.4^2$$
+$$\sigma_{x} = 0.045$$
+\item[b.] Sea:
+$$P(1\leq X\cdot \leq2) = \varnothing(\dfrac{2-1.4}{0.21343})- = \varnothing(\dfrac{1-1,4}{0.21343})$$
+$$= \varnothing(2.81) - \varnothing(-1.87)$$
+$$= \varnothing(2.81) -(1-\varnothing(1.87))$$
+$$= 0.9668$$
+\end{itemize}
+\section{Pregunta 03}
+La distribución de notas del examen final de Mat.I resulto ser normal, con cuartiles 1 y 3 iguales a 6.99 y 10.01 respectivamente.\\
+\begin{itemize}
+\item[a.]Determine la media y la varianza de la distribución de las notas\\
+\end{itemize}
+SOLUCIÓN\\
+\newline
+$N(\mu,\sigma^2)$
+$E(x)=\mu=?$
+$\sigma_{1}=P_{25}= 6.99$
+$\sigma_{2}=P_{75}= 11.01$
+\begin{itemize}
+\item[a.]
+$Q_{2}=\mu=\dfrac{Q_{1}+Q_{2}}{2}=9=\mu$\\
+\newline
+$P(|\overline{A}-\mu| \leq \dfrac{\sigma}{\sqrt{n}}) = 0.68$\\
+\newline
+$P(|\overline{A}-\mu| \leq \dfrac{2\sigma}{\sqrt{n}}) = 0.9544$\\
+\newline
+$P(|\overline{A}-\mu| \leq \dfrac{3\sigma}{\sqrt{n}}) = 0.99$\\
+\newline
+$P(|\overline{A}-\mu| \leq a) = 0.68$\\
+\newline
+$Z = \dfrac{x-\mu}{\sigma} \leadsto Poblacion$\\
+\newline
+$donde: \dfrac{N-n}{N-1}$ se le conoce como el sector de curvacion finito\\
+si, la varianza poblacional es desconocida\\
+$$\dfrac{\overline{x}-\mu}{\dfrac{s}{\sqrt{n}}} \leadsto t(n-1) grados de libertad$$\\
+si$$n\geq30 \leadsto \dfrac{\overline{x}-\mu}{\dfrac{s}{\sqrt{n}}} \leadsto N(0,1)$$
+\end{itemize} 
+\section{Pregunta 04}
+La vida útil en miles de horas de una batería es una variable aleatoria X con función de densidad:
+$$f(x) = \begin{cases}
+2-2x & \ 0\leq x \leq 1\\  
+1    & \ en el resto
+\end{cases} $$
+Si $X_{36}$ es la medida de la muestra aleatoria $X_{1}$, $X_{2}$,...,$X_{36}$ escogida de X.
+¿con que probabilidad $X_{36}$ es mayor que 420 horas?\\
+\newline
+SOLUCIÓN\\
+\newline
+$Si: n>30 \leadsto Z$\\
+\newline
+x: vida útil(100 horas)\\
+\newline
+$f(x)=2-2x ; 0\leq x \leq1$\\
+\newline
+por ende:\\
+$$\int_{0}^{1} f(x) \ dx $$
+$E(x)=\mu$\\
+$var(x)=\sigma^2$\\
+$P(X_{36} > 420h) = P(X_{36} > 0.42)$\\
+$$Z = \dfrac{x-\mu}{\dfrac{\sigma}{\sqrt{n}}}$$\\
+$$t = \dfrac{x-\mu}{\dfrac{\sigma}{\sqrt{n}}}$$\\
+Por tanto :\\
+\newline
+$\mu = E(x) = \int_{0}^{1} x(2-2x) \ dx = \dfrac{2}{3} - \dfrac{1}{2} = \dfrac{1}{6}$\\
+\newline
+Entonces :\\
+\newline
+$\sigma^2 = var(x) = (X^2) - (E(x))^2 = \dfrac{1}{6} - \dfrac{1}{9} = \dfrac{1}{18}$\\
+\newline
+Finalmente:\\
+$$P(\dfrac{X_{36}-\mu}{\dfrac{\sigma}{\sqrt{n}}} > \dfrac{0.42 - 0.33}{\dfrac{\sqrt{\dfrac{1}{18}}}{\sqrt{36}}})$$
+$$P(z > a) = 1 - P(z \leq a)$$
+$$1 - P(x \leq 2.71)$$
+$$1 - 0.98645$$
+$$Respueta = 0.0136$$
+\section{Pregunta 05}
+Sea $X_{36}$ la media de la muestra aleatoria $X_{1}$, $X_{2}$,...,$X_{40}$ de tamaño n=40 escogida de una población X cuya distribución es geométrica con función de probabilidad:
+$$f(x) = \dfrac{1}{5}(\dfrac{4}{5})^{x-1} , x=1,2...$$
+Halle la probabilidad de que la media muestral difiera de la media poblacional en a lo mas 10\% del valor de la varianza de la población. 
+SOLUCIÓN\\
+$Sea f(x) = p(1-p)^(x-1)$\\
+\newline
+$P(|\overline{x}-\mu| \leq 0.10 \sigma^2)$\\
+\newline
+$\mu = E(x) = \int_{0}^{1} f(x) \ dx $\\
+\newline
+$\sigma^2 = var(x) = E(x^2) - (E(x))^2$\\
+\newline
+$E(x) = \sum_{x=1}^{\infty} x P(1-P)^x$\\
+\newline
+$ =\sum_{x=1}^{\infty} \dfrac{d}{dx}(1-P)^xP$\\
+\newline
+$P\dfrac{d}{dx} \sum_{x=1}^{\infty} (1-P)^x$\\
+\newline
+$P\dfrac{d}{dx} \sum_{x=1}^{\infty} q^x = P\dfrac{d}{dx} \sum_{x=1}^{\infty} q^x-1$\\
+\newline
+$\dfrac{d q(1-q^x)}{dx}$
+\section{Pregunta 06}
+El tiempo de vida de una batería es una variable aleatoria $\overline{x}$ con distribución exponencial de parámetro $1/\theta$. Se escoge una muestra de n baterías.
+\begin{itemize}
+\item[a.] Halle el error estándar de la media muestral $\overline{x}$
+\item[b.] Si la muestra aleatoria es de tamaño n=64. ¿con que probabilidad diferirá $\overline{x}$ del verdadero valor de $\theta$ en menos de un error estándar?
+\item[c.] ¿Que tamaño de muestra mínimo seria necesario para que la media muestral $\overline{x}$ tenga un error estándar menor a un 5\% del valor real de $\theta$?
+\end{itemize} 
+SOLUCIÓN\\
+X : Tiempo de Vida\\
+$f(x) = \dfrac{1}{\sigma}\epsilon^{-\dfrac{x}{\sigma}} , x \geq$\\
+\begin{itemize}
+\item[a.]
+$\sqrt{var(\overline{x})} = \dfrac{\sigma}{\sqrt{n}} \leadsto Error Estandar$\\
+\newline
+$var(\overline{x})= \dfrac{\sigma^2}{n} = \dfrac{\mu}{\sqrt{n}} $\\
+\newline
+$\mu = \int_{0}^{\infty} \dfrac{x}{\sigma}\epsilon^{\dfrac{-x}{\sigma}} dx $\\
+\newline
+$v(\infty) = \int_{0}^{\infty} y^{\infty-1}\epsilon^{-y}dy = (\infty-1)! \infty \in N$\\
+\newline
+$v(\infty) = (\infty-1)! \enskip v(\infty-1)$\\
+\newline
+$E(x)= \mu = \sigma\int_{0}^{+\infty} \dfrac{x}{\sigma}^1 \epsilon^{\dfrac{-x}{\sigma}} d(\dfrac{x}{\sigma}) \quad ; \quad E(x^2)=2\sigma^2$\\
+\newline
+$$\sigma^2:\quad var(x)=2\sigma^2 - \sigma^2 = \sigma^2 $$
+\item[b. ]
+Sea m = 64\\
+\newline
+$P(\overline{x}-\sigma \leq \dfrac{\sigma}{\sqrt{n}})\quad\Rightarrow\quad P(\overline{x}-\sigma \leq \dfrac{\sigma}{8})$\\
+\newline
+$P(\dfrac{\overline{x}-\sigma}{\dfrac{\sigma}{8}} \leq \dfrac{\dfrac{\sigma}{8}}{\dfrac{\sigma}{8}})\quad\Rightarrow\quad P(z \leq 1)\quad\Rightarrow\quad 0.68$\\
+\newline
+$P(|\overline{x}-\sigma|\leq \dfrac{\sigma}{8}) = 0.68$\\
+\newline
+$P(-\sigma \leq {x-\mu} \leq \sigma)$\\
+\newline
+$P(|x-\mu| \leq x \leq \mu+\sigma)$\\
+\newline
+$P(|x-\mu| \leq 2\sigma) = 0.9544$\\
+\newline
+$P(|x-\mu| \leq 3\sigma) = 0.94$\\
+\item[c.]
+Sea:\\
+\newline
+$\dfrac{\sigma}{\sqrt{n}} \leq 0.05\sigma \quad\quad\quad \dfrac{1}{0.05}\leq \sqrt{n} \quad\quad\quad2\sigma < \sqrt{n} \quad\quad\quad\quad n>400$
+\end{itemize}
+\section{Pregunta 07}
+La utilidad por la venta de cierto artículo, en miles de soles, es una variable aleatoria con distribución normal. En el 5\% de las ventas de la utilidad ha sido menos que 3.42, mientras que el 1\% de las ventas ha sido mayor que 19.32. si se realizan  16 operaciones de ventas, ¿ cuál es la probabilidad de que el promedio de la utilidad por cada operación este entre 10,000 y 12,000 dolares\\
+SOLUCIÓN\\
+$X = utilidad en miles de dolares$\\
+$Sea:$\\
+$N(\mu,\sigma_{x}^{2})	n = 16$
+\begin{itemize}
+\item[a.]
+$$P(X<6.71) = 0.05$$
+$$\varnothing(\dfrac{6.71-\mu}{\sigma_{x}}) = -1.645$$
+\begin{equation}
+\dfrac{\mu-6.75}{1.645}\sigma_{x}
+\end{equation}
+\item[b.]
+$$P(X>6.71)=0.01$$
+$$1-\varnothing(\dfrac{14.66-\mu}{\sigma_{x}}) = 0.01$$
+$$(\dfrac{14.66-\mu}{\sigma_{x}}) = 2.33$$
+\begin{equation}
+(\dfrac{14.66-\mu}{2.33}) = \sigma_{x} 
+\end{equation}
+$$Igualando 1 y 2$$
+$$\mu = 10$$
+$$\sigma_{x} = 2$$
+\item[c.]
+$$P(10\leq X \leq 11)$$
+$$\varnothing(\dfrac{11-10}{\dfrac{2}{4}}) - \varnothing(\dfrac{10-10}{\dfrac{2}{4}})$$
+$$\varnothing(2)-\varnothing(0)$$
+$$= 0.4772$$
+\end{itemize}
+\section{Pregunta 08}
+La vida útil de cierta marca de llantas radiales es una variable aleatoria X cuya distribución es normal con (i=38,000Km. Y c= 3,000 Km.) \\
+\begin{itemize}
+\item[a.]Si la utilidad Y (en dolares) que produce cada llanta está dada por la relación: y=0.2X+100, ¿Cuál es la probabilidad de que la utilidad sea mayor que 8.900
+\item[b.]determine el número de tales llantas que debe adquirir una empresa de transporte para conseguir una utilidad media de al menos 7541 con probabilidad 0.996
+\end{itemize}
+SOLUCIÓN\\
+$X = N(3800,3000)$\\
+$Sea:$\\
+\begin{itemize}
+\item[a.] 
+$Utilidad en Dolares = Y$
+$$Y = 0.2X+100$$
+$$E(y) = 0.2E(x)+100$$
+$$E(y) = 0.2(3800)+100$$
+$$E(y) = 7700$$
+
+$$var(y) = 0.2^2var(x)$$
+$$\sigma{y} = 0.2\sigma{y} = 0.2(3000) = 600$$
+$$P(y>8.9000) = 1-A = \pi.r^{2}(\dfrac{8900-7700}{600})$$
+$$= 1 - \varnothing(2)$$
+$$= 1-0.9772$$
+$$= 0.0228$$
+
+\item[b.]
+$$P(y'>7541)$$
+$$E(y') = 0.2(3800)+100$$
+$$var(y) = \dfrac{\sigma_{x}^2}{n}$$
+$$\sigma_{y} = \dfrac{600}{\sqrt{n}}$$
+$$P(y'>7541)9 = 1-\varnothing(\dfrac{7541-7700}{\dfrac{600}{\sqrt{n}}})$$
+$$0.996 = 1-\varnothing(\dfrac{7541-7700}{\dfrac{600}{\sqrt{n}}})$$
+$$\varnothing(2.65) = (\dfrac{7541-7700}{\dfrac{600}{\sqrt{n}}})$$
+$$2.65 = (\dfrac{7541-7700}{\dfrac{600}{\sqrt{n}}})$$
+$$n = 100$$  
+\end{itemize}
+\section{Pregunta 09}
+Un proceso automático llena bolsa de café cuyo peso neto tiene una media  de  250  gramos  y  una  desviación  estándar  de  3  gramos.  Para controlar el proceso, cada hora se pesan 36 de tales bolsas de café escogidas al azar. Si el peso neto medio esta entre 249 y 251 gramos se continúa con el proceso aceptando que el peso neto medio real es 250 gramos y en caso contrario, se detiene el proceso para reajustar la máquina.
+\begin{itemize}
+\item[a.]¿Cual  es  la  probabilidad  de  detener  el  proceso  cuando  el  peso  neto  medio realmente es 250?
+\item[b.]¿Cual es la probabilidad de aceptar que el peso neto promedio es 250 cuando realmente es de 248 gramos?
+\end{itemize}
+SOLUCIÓN\\
+Sea X = peso neto medio de café, $$ X\thicksim N (250,3^2)$$
+\begin{itemize}
+\item[a.]
+$$P(x\leq249 \vee x\geq251) = $$
+$$= P(z\leq(\dfrac{249-250}{\sqrt[3]{3}}))$$
+$$= P(z\leq-2 \vee z\geq2)$$
+$$= 1-P(-2\leq z \leq2)$$
+$$= 1-(1-2P(z\leq-2))$$
+$$= 2P(z\leq-2)$$
+$$= 2(0.0228)$$
+$$= 0.0456$$
+Respuesta: Existe una probabilidad de 4,56 \% cuando el peso neto medio es de 250 gramos.
+\end{itemize}
+\section{Pregunta 10}
+La utilidad por la venta de cierto artículo, en miles de soles, es una variable aleatoria con distribución normal. En el 5\% de las ventas de la utilidad ha sido menos de 6.71, mientras que al 1\% de las ventas serian mayor que 14.66. si se realizan  16 operaciones de ventas, ¿ cuál es la probabilidad de que el promedio de la utilidad por cada operación este entre 10,000 y 11,000 dolares\\
+SOLUCIÓN\\
+$X = utilidad en miles de dolares$\\
+$Sea:$\\
+$N(\mu,\sigma_{x}^{2})	n = 16$
+\begin{itemize}
+\item[•]
+$$P(x<6.71) = 0.05$$
+$$\varnothing(\dfrac{6.71-\mu}{\sigma_{x}}) =0.05$$
+\begin{equation}
+\dfrac{6.71-\mu}{\sigma_{x}} = -1.645
+\dfrac{\mu-6.71}{1.645} = \sigma_{x}
+\end{equation}
+\item[•]
+$$P(X>6.71)=0.01$$
+$$1-\varnothing(\dfrac{14.66-\mu}{\sigma_{x}}) = 0.01$$
+$$(\dfrac{14.66-\mu}{\sigma_{x}}) = 2.33$$
+\begin{equation}
+(\dfrac{14.66-\mu}{2.33}) = \sigma_{x} 
+\end{equation}\\
+$$Igualando 3 y 4$$
+$$\mu = 10$$
+$$\sigma_{x} = 2$$\\
+\item[•]
+$$P(10\leq X \leq 11)$$
+$$\varnothing(\dfrac{11-10}{\dfrac{2}{4}}) - \varnothing(\dfrac{10-10}{\dfrac{2}{4}})$$
+$$\varnothing(2)-\varnothing(0)$$ 
+$$= 0.3251$$
+\end{itemize}
+\section{Pregunta 11}
+Una empresa vende bloques de mármol cuyo pero se distribuye normalmente con una media de 200 kilogramos.
+\begin{itemize}
+\item[a.]Calcular la varianza del peso de los bloques, si la probabilidad de que el peso este entre 165 Kg y 235 Kg es 0.9876
+\item[b.]Que tan grande debe ser la muestra para que haya una probabilidad de 0.9938 de que el peso medio de la muestra sea inferior a 205 Kg?.
+\end{itemize}
+SOLUCIÓN\\
+\begin{itemize}
+\item[a.]
+Sea:
+$X : $ peso en Kg de mármol 
+$X \rightarrow N(200, \sigma_{x}^2)$\\
+\newline
+$\dfrac{(165 \leq x \leq 235)}{P_{\mu}}) = 0.9876$\\
+\newline
+$0.9876 =\varnothing(\dfrac{235-200}{\sigma_{x}}) - \varnothing(\dfrac{165-200}{\sigma_{x}})$\\
+\newline
+$0.9876 =\varnothing(\dfrac{35}{\sigma_{x}}) - \varnothing(\dfrac{-35}{\sigma_{x}})$\\
+\newline
+$0.9876 = 2 \varnothing(\dfrac{35}{\sigma_{x}}) - 1)$\\
+\newline
+$1.9876 = 2 \varnothing\dfrac{35}{\sigma_{x}})$\\
+\newline
+$2.5 = \dfrac{35}{\sigma_{x}}$\\
+\newline
+$2.5 = 14\sigma_{x}^2 \quad  = 196$\\
+\item[b.] Por tanto:\\
+\newline
+$= (\dfrac{205-200}{14/\sqrt{n}})$\\
+\newline
+$2.5 = \dfrac{5\sqrt{n}}{14}\qquad n = 49$
+\end{itemize}
+\end{document}
